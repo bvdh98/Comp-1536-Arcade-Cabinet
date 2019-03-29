@@ -1,4 +1,5 @@
-head{
+
+html,head,body{
     width:100%;
     height:100%;
     margin:0;
@@ -6,32 +7,35 @@ head{
 }
 
 body{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
-}
-
-.fillrow{
-height:50%;
-}
-#container{
-    width:100%;
-    height:100%;
-    /*background-image: url('img/graphic.jpg');*/
+    
+    background-image: url('img/graphic.jpg');
 }
 
 #screen {
 background-color: aqua;
-height: 70%;
-
+height: 1300px;
+width:75%;
 margin-top:15%;
+/*margin-left:25%;
+margin-right:25%;*/
 
+}
+
+#control-board > img{
+    vertical-align: center;
+    display:inline-block;
+    margin
+}
+
+#img-left{
+  transform: scaleX(-1);
 }
 
 #control-board {
     background-color: brown;
-    height:30%;
+    height:275px;
+    width:75%;
+    align-content: center;
     }
 
 
