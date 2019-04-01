@@ -20,6 +20,7 @@ html,body{
     height: 70%;
 
     margin-top:15%;
+}
 
 #img-left{
   transform: scaleX(-1);
