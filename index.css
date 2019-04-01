@@ -3,6 +3,12 @@ html,body{
     height:100%;
     margin:0;
     padding:0;
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+}
+
+#siteTitle{
+	font-size: 24pt;
 }
 
 #containerAll{
@@ -18,4 +24,32 @@ html,body{
     height: 80%;
 }
 
+#navContainer{
+	top: 50%;
+	position: fixed;
+	pointer-events: none;
+}
 
+#leftNav, #rightNav{
+	transition: all 0.3s cubic-bezier(.17,.67,0,.98);
+	pointer-events: auto;
+}
+
+#leftNav:hover{
+	cursor: pointer;
+	transform: scale(2);
+
+}
+
+#rightNav:hover{
+	cursor: pointer;
+	transform: scale(2);
+}
+
+#leftNav:click{
+	transform:scale(0.1);
+}
+
+#rightNav:click{
+	transform:scale(0.1);
+}
