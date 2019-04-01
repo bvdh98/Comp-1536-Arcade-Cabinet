@@ -1,0 +1,22 @@
+{
+  "name": "comp-1536-arcade-cabinet",
+  "version": "1.0.0",
+  "description": "A simple web app as a proof of concept",
+  "main": "\u001b[D\u001b[D\u001b[D\u001bapp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvdh98/Comp-1536-Arcade-Cabinet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvdh98/Comp-1536-Arcade-Cabinet/issues"
+  },
+  "homepage": "https://github.com/bvdh98/Comp-1536-Arcade-Cabinet#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

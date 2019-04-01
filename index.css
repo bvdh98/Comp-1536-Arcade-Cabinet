@@ -3,22 +3,28 @@ html,body{
     height:100%;
     margin:0;
     padding:0;
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
 }
 
-.fillrow{
-    height:50%;
+#siteTitle{
+	font-size: 24pt;
 }
 
-#container{
-    width:100%;
-    height:100%;
-    /*background-image: url('img/graphic.jpg');*/
+#containerAll{
+    width: 100%;
+    height: 100%;
 }
 
-#screen {
-    background-color: aqua;
-    height: 70%;
+#topRow{
+    height: 20%;
+}
 
+#bottomRow{
+    height: 80%;
+}
+
+<<<<<<< HEAD
     margin-top:15%;
 }
 
@@ -32,6 +38,34 @@ html,body{
     width:75%;
     align-content: center;
     }
+=======
+#navContainer{
+	top: 50%;
+	position: fixed;
+	pointer-events: none;
+}
 
+#leftNav, #rightNav{
+	transition: all 0.3s cubic-bezier(.17,.67,0,.98);
+	pointer-events: auto;
+}
 
+#leftNav:hover{
+	cursor: pointer;
+	transform: scale(2);
+>>>>>>> 29180e49ab00f6156715b62b11571c4ed246e8d0
 
+}
+
+#rightNav:hover{
+	cursor: pointer;
+	transform: scale(2);
+}
+
+#leftNav:click{
+	transform:scale(0.1);
+}
+
+#rightNav:click{
+	transform:scale(0.1);
+}
