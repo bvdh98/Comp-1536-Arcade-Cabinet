@@ -24,21 +24,6 @@ html,body{
     height: 80%;
 }
 
-<<<<<<< HEAD
-    margin-top:15%;
-}
-
-#img-left{
-  transform: scaleX(-1);
-}
-
-#control-board {
-    background-color: brown;
-    height:275px;
-    width:75%;
-    align-content: center;
-    }
-=======
 #navContainer{
 	top: 50%;
 	position: fixed;
@@ -53,7 +38,6 @@ html,body{
 #leftNav:hover{
 	cursor: pointer;
 	transform: scale(2);
->>>>>>> 29180e49ab00f6156715b62b11571c4ed246e8d0
 
 }
 
