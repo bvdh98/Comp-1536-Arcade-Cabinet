@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="webfonts/ostrich-sans.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href=index.css>
+  <!-- Animate.css -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
   <script>
@@ -23,79 +25,72 @@
     messagingSenderId: "412690379260"};
     firebase.initializeApp(config);
   </script>
-
 </head>
 <body>
   <div id ="containerAll" class="container-fluid text-center">
     <div id="topRow" class="row">
       <div class="container-fluid">
         <div class="row">
-          <div id="siteTitle" class="col-4 mx-lg-auto ml-auto">
+          <div id="siteTitle" class="col-4 mx-lg-auto ml-auto animated fadeInDown">
             THE ARCADE CABINET
           </div>
           <div id="infoBtn" class="d-lg-none d-md-block col-sm-4 text-right">INFO</div>
         </div>
         <div class="row">
-          <div id="gameTitle" class="col-lg-2 mx-auto mt-5">
+          <div id="gameTitle" class="col-lg-2 mx-auto mt-5 animated fadeInDown">
             Galaga
           </div>
         </div>  
       </div>
     </div>
-    <div id="bottomRow" class="row mx-auto">
+    <div id="bottomRow" class="row mx-auto animated fadeInUp">
       <div class="col-lg-4 d-none d-lg-block">
-        <div class="container-fluid text-left mt-5">
+        <div class="container-fluid text-left">
           <div class="row">
-            <div class="col-10 mx-auto">
+            <div class="col-10 mx-auto mt-4">
               <h3>Developer: </h3>
+              <h6>Namco</h6>
             </div>
           </div>
           <div class="row">
-            <div class="col-10 mx-auto mt-5">
+            <div class="col-10 mx-auto mt-4">
               <h3>Year of Release: </h3>
+              <h6> 1981 </h6>
             </div>
           </div>
           <div class="row">
-              <div class="col-10 mx-auto">
-                <h4>1981</h4>
-              </div>
-            </div>
-          <div class="row">
-            <div class="col-10 mx-auto mt-5">
+            <div class="col-10 mx-auto mt-4">
               <h3>Copies Sold: </h3>
+              <h6>132,000 cabinets</h6>
             </div>
           </div>
           <div class="row">
-              <div class="col-10 mx-auto">
-                <h4>132,000 cabinets</h4>
-              </div>
-            </div>
-          <div class="row">
-            <div class="col-10 mx-auto mt-5">
+            <div class="col-10 mx-auto mt-4">
               <h3>Publisher: </h3>
+              <h6>Namco</h6>
             </div>
           </div>
-          <div class="row">
-              <div class="col-10 mx-auto">
-                <h4>Namco</h4>
-              </div>
-            </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-10 mx-auto">
-              <iframe width="100%" height="506" 
+            <div id="cabHead" class="col-10 mx-auto">
+            </div>
+            <div id="cabScreen" class="col-10 mx-auto">
+              <iframe width="100%" height="350px" 
                 src="https://www.youtube.com/embed/MyIPBufxl30?&autoplay=1" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                 picture-in-picture" allowfullscreen>
               </iframe>
             </div>
+            <div id="cabControls" class="col-10 mx-auto">
+              
+            </div>
           </div>
           <div class="row">
-            <div class="col-10 mx-auto" id="cabinetBottom">
-              <img src="img/galaga-front-full.jpg" height="100%" width="100%">
+            <div id="cabinetBottom" class="col-10 mx-auto" >
+              <img id="cabinetImg" src="img/galaga-front-full.jpg" height="100%" width="100%">
             </div>
           </div>
         </div>
