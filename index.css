@@ -98,3 +98,27 @@ html,body{
 #infoBtn:hover{
 	cursor: pointer;
 }
+
+iframe{
+    border-width: 25px;
+    border-color:red;
+}
+
+.controlBoard {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+#cabinetBottom{
+    width:75%;
+    height:300px;
+    background-color:darkblue;
+    position: absolute;
+    top:94%;
+    left:12%;
+    
+}
+
