@@ -17,18 +17,47 @@ html,body{
 }
 
 #topRow{
-    height: 20%;
+    margin-bottom: 5%;
 }
 
 #bottomRow{
-    height: 80%;
+    height: 60%;
 }
 
 #navContainer{
 	top: 50%;
 	position: fixed;
 	pointer-events: none;
+	z-index: 1000;
 }
+
+#overlayContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	margin-top: 7%;
+	background-color: grey;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+	z-index: 10;
+}
+
+.overlayVisible{
+	opacity:  0.6 !important;
+	visibility: visible !important;
+	display: block !important;
+	height: 100% !important;
+}
+
+
+#rightImg, #leftImg{
+	width: 100%;
+	height: auto;
+}
+
 
 #leftNav, #rightNav{
 	transition: all 0.3s cubic-bezier(.17,.67,0,.98);
@@ -37,19 +66,22 @@ html,body{
 
 #leftNav:hover{
 	cursor: pointer;
-	transform: scale(2);
-
+	transform: scale(1.5);
 }
 
 #rightNav:hover{
 	cursor: pointer;
-	transform: scale(2);
+	transform: scale(1.5);
 }
 
-#leftNav:click{
+#leftNav:active{
 	transform:scale(0.1);
 }
 
-#rightNav:click{
+#rightNav:active{
 	transform:scale(0.1);
+}
+
+#infoBtn:hover{
+	cursor: pointer;
 }

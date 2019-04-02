@@ -2,62 +2,77 @@
 <html>
 <head>
 	<title>Arcade Cabinet</title>
+
+  <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Ostrich Font -->
   <link rel="stylesheet" type="text/css" href="webfonts/ostrich-sans.css">
-	<link rel="stylesheet" href=index.css>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href=index.css>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCeS5Pn5pKEpR_Jd75SSdaqAETIycMc1es",
+    authDomain: "arcade-cabinet-d6b6b.firebaseapp.com",
+    databaseURL: "https://arcade-cabinet-d6b6b.firebaseio.com",
+    projectId: "arcade-cabinet-d6b6b",
+    storageBucket: "",
+    messagingSenderId: "412690379260"
+  };
+  firebase.initializeApp(config);
+</script>
+
 </head>
 <body>
-
   <div id ="containerAll" class="container-fluid text-center">
     <div id="topRow" class="row">
       <div class="container-fluid">
         <div class="row">
-          <div id="siteTitle" class="col-8 mx-auto">
+          <div id="siteTitle" class="col-4 mx-lg-auto ml-auto">
             The Arcade Cabinet
           </div>
-         </div>
+          <div id="infoBtn" class="d-lg-none d-md-block col-sm-4 text-right">INFO</div>
+        </div>
         <div class="row">
-          <div class="col-4 mx-auto mt-5">
+          <div class="col-lg-4 mx-auto pt-5">
             Galaga
           </div>
         </div>  
       </div>
     </div>
     <div id="bottomRow" class="row">
-      <div class="col-4">Left Info Pane</div>
-      <div class="col-4">Arcade Cabinet</div>
-      <div class="col-4">Right Info Pane</div>
-    </div>
-<!--   <div id="bottomRow" class="fillrow">
-    <div id ="screen" >
-      One of three columns
+      <div class="col-lg-4 d-none d-lg-block">Left Info Pane</div>
+      <div class="col-lg-4 col-sm-12">Arcade Cabinet</div>
+      <div class="col-lg-4 d-none d-lg-block">Right Info Pane</div>
     </div>
   </div>
-
-  <div class="fillrow">
-    <div id ="control-board">
-      control-board
+  <div id="overlayContainer" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-12">THIS IS A BUNCH OF INFO INSIDE THE ROW</div>
     </div>
-  </div> -->
-</div>
-
- <div id="navContainer" class="container-fluid">
-      <div id="navRow" class="row">
-        <div id="leftNav" class="col-1">
-          <img id="leftArrow" src="img/leftArrow.png" height="100px" width="auto">
-        </div>
-        <div id="rightNav" class="col-1 ml-auto text-right">
-          <img src = "img/rightArrow.png" height="100px" width="auto">
-        </div>
+  </div>
+  <div id="navContainer" class="container-fluid text-center">
+    <div id="navRow" class="row">
+      <div id="leftNav" class="navBtn col-1 mr-auto text-right">
+        <img id="leftImg" src="img/leftArrow.png" height="100px" width="auto">
       </div>
+      <div id="rightNav" class="navBtn col-1 ml-auto text-left">
+        <img id="rightImg" src ="img/rightArrow.png" height="100px" width="auto">
+      </div>
+    </div>
   </div>
 
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+  <!-- Jquery Min 3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
