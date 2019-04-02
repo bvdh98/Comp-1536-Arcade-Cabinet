@@ -53,3 +53,7 @@ html,body{
 #rightNav:click{
 	transform:scale(0.1);
 }
+
+/*#leftinfopane{
+    font-size: 20pt;
+}*/
