@@ -31,13 +31,14 @@
     <div id="topRow" class="row">
       <div class="container-fluid">
         <div class="row">
-          <div id="siteTitle" class="col-4 mx-lg-auto ml-auto animated fadeInDown">
+<!--      <div id="siteTitle" class="col-4 mx-lg-auto ml-auto animated fadeInDown">
             THE ARCADE CABINET
-          </div>
+          </div> 
           <div id="infoBtn" class="d-lg-none d-md-block col-sm-4 text-right">INFO</div>
+-->
         </div>
         <div class="row">
-          <div id="gameTitle" class="col-lg-2 mx-auto mt-5 animated fadeInDown">
+          <div id="gameTitle" class="col-lg-2 col-sm-4 mx-auto mt-5 animated fadeInDown">
             Galaga
           </div>
         </div>  
@@ -72,24 +73,42 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-12">
+      <div class="col-lg-4 col-sm-9 mx-sm-auto">
         <div class="container-fluid">
           <div class="row">
-            <div id="cabHead" class="col-10 mx-auto">
+            <div id="cabHead" class="col-12 mx-auto">
+              <div class="container my-auto">
+                <div class="row">
+                  <div id="cabHeadInner" class="col-12">
+                    <span id="arcadeTitle">1536 ARCADE</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div id="cabScreen" class="col-10 mx-auto">
+            <div id="cabScreen" class="col-12 mx-auto">
               <iframe width="100%" height="350px" 
                 src="https://www.youtube.com/embed/MyIPBufxl30?&autoplay=1" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                 picture-in-picture" allowfullscreen>
               </iframe>
             </div>
-            <div id="cabControls" class="col-10 mx-auto">
-              
+            <div id="cabControls" class="col-12 mx-auto">
+              <img id="joy1" class="cabControl" src="img/joystick2.png">
+              <img id="ctrlBtn1" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn2" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn7" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn8" class="cabControl" src="img/button.png" width="50px" height="auto">
+
+
+              <img id="joy2" class="cabControl" src="img/joystick2.png">
+              <img id="ctrlBtn3" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn4" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn5" class="cabControl" src="img/button.png" width="50px" height="auto">
+              <img id="ctrlBtn6" class="cabControl" src="img/button.png" width="50px" height="auto">
             </div>
           </div>
           <div class="row">
-            <div id="cabinetBottom" class="col-10 mx-auto" >
+            <div id="cabinetBottom" class="col-12 mx-auto" >
               <img id="cabinetImg" src="img/galaga-front-full.jpg" height="100%" width="100%">
             </div>
           </div>
