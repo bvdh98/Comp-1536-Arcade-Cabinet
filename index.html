@@ -5,6 +5,8 @@
 
   <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <!-- Ostrich Font -->
   <link rel="stylesheet" type="text/css" href="webfonts/ostrich-sans.css">
   <!-- Custom CSS -->
@@ -12,17 +14,15 @@
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
   <script>
-  // Initialize Firebase
-  var config = {
+    var config = {
     apiKey: "AIzaSyCeS5Pn5pKEpR_Jd75SSdaqAETIycMc1es",
     authDomain: "arcade-cabinet-d6b6b.firebaseapp.com",
     databaseURL: "https://arcade-cabinet-d6b6b.firebaseio.com",
     projectId: "arcade-cabinet-d6b6b",
     storageBucket: "",
-    messagingSenderId: "412690379260"
-  };
-  firebase.initializeApp(config);
-</script>
+    messagingSenderId: "412690379260"};
+    firebase.initializeApp(config);
+  </script>
 
 </head>
 <body>
@@ -31,38 +31,38 @@
       <div class="container-fluid">
         <div class="row">
           <div id="siteTitle" class="col-4 mx-lg-auto ml-auto">
-            The Arcade Cabinet
+            THE ARCADE CABINET
           </div>
           <div id="infoBtn" class="d-lg-none d-md-block col-sm-4 text-right">INFO</div>
         </div>
         <div class="row">
-          <div class="col-lg-4 mx-auto pt-5">
+          <div id="gameTitle" class="col-lg-2 mx-auto mt-5">
             Galaga
           </div>
         </div>  
       </div>
     </div>
-    <div id="bottomRow" class="row">
+    <div id="bottomRow" class="row mx-auto">
       <div class="col-lg-4 d-none d-lg-block">
-        <div class="container-fluid">
+        <div class="container-fluid text-left mt-5">
           <div class="row">
             <div class="col-10 mx-auto">
-              Left Info Pane
+              <h3>Developer: </h3>
             </div>
           </div>
           <div class="row">
             <div class="col-10 mx-auto mt-5">
-              Year of Release
+              <h3>Year of Release: </h3>
             </div>
           </div>
           <div class="row">
             <div class="col-10 mx-auto mt-5">
-              Copies Sold
+              <h3>Copies Sold: </h3>
             </div>
           </div>
           <div class="row">
             <div class="col-10 mx-auto mt-5">
-              Publisher
+              <h3>Publisher: </h3>
             </div>
           </div>
         </div>
@@ -72,24 +72,25 @@
           <div class="row">
             <div class="col-10 mx-auto">
               <iframe width="100%" height="506" 
-                src="https://www.youtube.com/embed/MyIPBufxl30" frameborder="0" 
+                src="https://www.youtube.com/embed/MyIPBufxl30?&autoplay=1" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                 picture-in-picture" allowfullscreen>
               </iframe>
             </div>
           </div>
         </div>
-        Arcade Cabinet</div>
+      </div>
       <div class="col-lg-4 d-none d-lg-block">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-10 mx-auto mt-5">
-              The gameplay of Galaga puts the 
-            player in control of a spacecraft which is situated at the bottom 
-            of the screen, with enemy aliens arriving in formation at the beginning 
-            of a stage, either trying to destroy, collide with, or capture the 
-            spaceship, with the player progressing every time alien forces are 
-            vanquished.
+            <div id="description" class="col-10 mx-auto mt-5 text-left">
+              <h3 class="mb-5">Description: </h3>
+              <p>The gameplay of Galaga puts the 
+              player in control of a spacecraft which is situated at the bottom 
+              of the screen, with enemy aliens arriving in formation at the beginning 
+              of a stage, either trying to destroy, collide with, or capture the 
+              spaceship, with the player progressing every time alien forces are 
+              vanquished.</p>
             </div>
           </div>
         </div>
@@ -108,7 +109,6 @@
       </div>
     </div>
   </div>
-
 
 
   <!-- Jquery Min 3.3.1 -->
