@@ -29,6 +29,10 @@ app.get('/ExciteBike-GET', function(req, res){
 	res.json({url: "https://www.youtube.com/embed/ajb4AeyzDGI"});
 });
 
+app.get('/DoubleDragon-GET', function(req, res){
+	res.json({url: "https://www.youtube.com/embed/V7JpfAV8-oI"})
+});
+
 
 
 app.listen(3000, function () {

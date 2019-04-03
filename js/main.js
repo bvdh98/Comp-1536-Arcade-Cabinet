@@ -1,4 +1,4 @@
-var index = 3;
+var index = 4;
 var gameKeys = [];
 
 window.onload = function() {
