@@ -12,6 +12,7 @@ $("#closeOverlayBtn").click(function(){
 $("#rightNav").click(function(){
 	index = (index + 1) % gameKeys.length;
 	fetchNextGame(gameKeys[index]);
+	fetchNextVideoLocal(gameKeys[index]);
 });
 
 $("#leftNav").click(function(){
@@ -20,6 +21,7 @@ $("#leftNav").click(function(){
 		index = gameKeys.length - 1;
 	}
 	fetchNextGame(gameKeys[Math.abs(index)]);
+	fetchNextVideoLocal(gameKeys[Math.abs(index)]);
 });
 
 $(document).ready(function(){
@@ -32,13 +34,29 @@ $(document).ready(function(){
 			for (var game in data){
 				gameKeys.push(game);
 			}
-			console.log("success: GET init games");
 		},
 		error: function(error){
 			console.log("error: " +error);
 		}
 	});
 });
+
+function fetchNextVideoLocal(gameName){
+	var trimmedStr = gameName.replace(/\s+/g, '');
+	console.log("/" + trimmedStr + "-GET");
+	$.ajax({
+		url: "/" + trimmedStr + "-GET",
+		type: "GET",
+		success: function(data){
+			console.log(data.url);
+			$("#videoSrc").attr("src", data.url  + "?autoplay=1");
+		},
+		error: function(error){
+			console.log(error);
+		}
+	});
+}
+
 
 function fetchNextGame(gameName){
 	$.ajax({
@@ -69,8 +87,6 @@ function fetchNextGame(gameName){
 			$("#gameTitle").each(function(){
 				$(this).html("<div class=\"animated fadeInDown\">" + gameKeys[index] + "</div>");
 			});
-			console.log(data.developer)
-			console.log("success: GET game: " + gameName);
 		},
 		error: function(error){
 			console.log("error:" + error);
