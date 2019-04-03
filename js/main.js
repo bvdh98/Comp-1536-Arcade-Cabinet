@@ -1,6 +1,14 @@
 var index = 3;
 var gameKeys = [];
 
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    color: '#ffffff',
+    maxParticles: '750'
+  });
+};
+
 $("#infoBtn").click(function(){
 	$("#overlayContainer").toggleClass("overlayVisible");
 });
