@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 app.use(express.static(__dirname));
 
 app.get('/Galaga-GET', function(req, res){
-	res.json({url: "https://www.youtube.com/embed/MyIPBufxl30?&autoplay=1"});
+	res.json({url: "https://www.youtube.com/embed/MyIPBufxl30"});
 });
 
 app.get('/Frogger-GET', function(req, res){
